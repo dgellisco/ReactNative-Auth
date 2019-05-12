@@ -13,6 +13,9 @@ class App extends Component {
 
     componentWillMount() {
 
+        console.log('firebaseConfig');
+        console.log(firebaseConfig);
+
         firebase.initializeApp(firebaseConfig);
 
         // Monitors firebase authentication state changes
