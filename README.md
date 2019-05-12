@@ -8,7 +8,7 @@ A React-Native app with Firebase authentication and a focus on providing respons
 
 ## Skills & Competencies Demonstrated
 
-* React-Native project creation and setup (including ESLint)
+* React-Native project creation and setup
 * Proper use of React components and state
 * Firebase user authentication
 * Responsive feedback to the user (including error messages and loading icons)
