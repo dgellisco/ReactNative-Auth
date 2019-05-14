@@ -1,3 +1,5 @@
+// STARTING POINT
+
 /**
  * @format
  */

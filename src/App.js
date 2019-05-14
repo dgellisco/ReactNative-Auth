@@ -1,24 +1,26 @@
+// MAIN APP
+
+// DEPENDENCIES
 // Import React and React-Native
 import React, { Component } from 'react';
 import { View } from 'react-native';
-// Import packages
+// Import firebase
 import firebase from 'firebase';
 import firebaseConfig from '../firebase.config';
-// Import components
+// Import local components
 import { Button, CardSection, Header, LoadingSpinner } from './components/common';
 import LoginForm from './components/LoginForm';
 
+// Create main
 class App extends Component {
+    // Set default login state to 'unknown'
     state = { loggedIn: null };
 
     componentWillMount() {
-
-        console.log('firebaseConfig');
-        console.log(firebaseConfig);
-
+        // Connect to firebase
         firebase.initializeApp(firebaseConfig);
 
-        // Monitors firebase authentication state changes
+        // Monitor firebase authentication state changes
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
                 this.setState({ loggedIn: true });
@@ -28,6 +30,7 @@ class App extends Component {
         });
     }
 
+    // Render content based on log in state
     renderContent() {
         // Check user authentication state
         switch (this.state.loggedIn) {
@@ -53,10 +56,13 @@ class App extends Component {
         }
     }
     
+    // Render App
     render() {
         return (
             <View>
+                {/* Always render header */}
                 <Header headerText='Authentication' />
+                {/* Render content based on authentication state */}
                 {this.renderContent()}
             </View>
         );

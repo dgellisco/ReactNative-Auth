@@ -25,4 +25,3 @@ A React-Native app with Firebase authentication and a focus on providing respons
 
 * Thank you to Stephen Grider for his [wonderful course on React Native](https://www.udemy.com/the-complete-react-native-and-redux-course/).
 * Also, thank you to Trilogy and the University Of Denver for sparking my coding passion with their in-depth [coding boot camp](https://bootcamp.du.edu/coding/).
-
