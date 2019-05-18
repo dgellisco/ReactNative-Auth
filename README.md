@@ -4,7 +4,7 @@ A React-Native app with Firebase authentication and a focus on providing respons
 
 ## Demonstration
 
-![Image](https://github.com/dgellisco/ReactNative-Auth/blob/master/README-Demo01.gif?raw=true)
+![Image](https://github.com/dgellisco/ReactNative-SG-Auth/blob/master/README-Demo01.gif?raw=true)
 
 ## Skills & Competencies Demonstrated
 
